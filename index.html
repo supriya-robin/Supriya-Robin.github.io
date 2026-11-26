@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#211811">
 <meta property="og:title" content="Supriya S P & Robin R — Wedding Invitation">
-<meta property="og:description" content="Join us as we celebrate our wedding on 20 December 2026.">
+<meta property="og:description" content="Join us for the reception on 19 December and wedding on 20 December 2026.">
 <meta property="og:type" content="website">
 <title>Supriya S P & Robin R — Wedding Invitation</title>
 <style>
@@ -48,7 +48,7 @@ section{position:relative;padding:76px 24px}.center{text-align:center}.eyebrow{t
   <div class="hero-content">
     <div class="eyebrow gold">A new chapter begins</div>
     <h1>Supriya &amp; Robin</h1>
-    <p>Sunday · 20 December 2026<br>11:15 AM — 12:10 PM</p>
+    <p>Reception · Saturday, 19 December 2026<br>5:00 PM — 8:00 PM<br><span style="display:block;margin-top:8px">Wedding · Sunday, 20 December 2026<br>11:15 AM — 12:10 PM</span></p>
   </div>
 </section>
 
@@ -84,12 +84,12 @@ section{position:relative;padding:76px 24px}.center{text-align:center}.eyebrow{t
 <section class="gallery">
   <div class="center"><div class="eyebrow">Moments &amp; memories</div><h2>A glimpse of our story</h2></div>
   <div class="gallery-grid">
-    <img src="assets/memory-1.jpg" alt="Supriya and Robin by the seaside" loading="lazy">
+    <img src="assets/memory-5.jpg" alt="Supriya and Robin in their engagement attire" loading="lazy">
+    <img src="assets/memory-6.jpg" alt="Supriya and Robin at the temple" loading="lazy">
     <img src="assets/memory-2.jpg" alt="Supriya and Robin among the flowers" loading="lazy">
     <img src="assets/memory-3.jpg" alt="Supriya and Robin looking at each other" loading="lazy">
     <img src="assets/memory-4.jpg" alt="Supriya and Robin in pink" loading="lazy">
-    <img src="assets/memory-5.jpg" alt="Supriya and Robin in their wedding attire" loading="lazy">
-    <img src="assets/memory-6.jpg" alt="Supriya and Robin at the temple" loading="lazy">
+    <img src="assets/memory-1.jpg" alt="Supriya and Robin by the seaside" loading="lazy">
   </div>
 </section>
 
@@ -97,8 +97,13 @@ section{position:relative;padding:76px 24px}.center{text-align:center}.eyebrow{t
   <div class="eyebrow">Join us</div><h2>JAYAMAHESH AUDITORIUM</h2>
   <div class="venue-card">
     <div class="venue-info">
+      <div class="eyebrow">Saturday · 19 December 2026</div>
+      <div class="venue-name">Wedding Reception</div>
+      <div class="venue-time">5:00 PM — 8:00 PM</div>
+      <div class="orn">❦</div>
+      <div class="eyebrow">Sunday · 20 December 2026</div>
       <div class="venue-name">Wedding Ceremony</div>
-      <div class="venue-time">20 December 2026 · 11:15 AM to 12:10 PM</div>
+      <div class="venue-time">11:15 AM — 12:10 PM</div>
       <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Jayamahesh+Auditorium" target="_blank" rel="noopener">Open in Google Maps ↗</a>
     </div>
   </div>
@@ -111,7 +116,7 @@ section{position:relative;padding:76px 24px}.center{text-align:center}.eyebrow{t
   <div class="eyebrow">Share the joy</div><h2 class="serif" style="font-size:48px;margin:12px 0 20px">See you there.</h2>
   <button onclick="shareInvite()">Share invitation</button>
 </section>
-<footer class="footer">Supriya S P &amp; Robin R · 20 December 2026</footer>
+<footer class="footer">Supriya S P &amp; Robin R · Reception 19 December · Wedding 20 December 2026</footer>
 </main>
 <button class="music" id="musicBtn" onclick="toggleMusic()" aria-label="Play or pause wedding music" title="Play / pause music">♪</button>
 </div>
@@ -151,7 +156,7 @@ const audio=document.getElementById("music"),btn=document.getElementById("musicB
 if(CONFIG.music){audio.src=CONFIG.music}
 const rsvpBtn=document.getElementById("rsvpBtn"); rsvpBtn.href=CONFIG.rsvp;
 function toggleMusic(){if(!audio.src){alert("Add your music file path in CONFIG.music, for example: assets/wedding-music.mp3");return}if(audio.paused){audio.play();btn.textContent="Ⅱ"}else{audio.pause();btn.textContent="♪"}}
-async function shareInvite(){const data={title:"Supriya S P & Robin R — Wedding Invitation",text:"Join us on 20 December 2026 at JAYAMAHESH AUDITORIUM.",url:location.href};if(navigator.share){try{await navigator.share(data)}catch(e){}}else{await navigator.clipboard?.writeText(location.href);alert("Invitation link copied.")}}
+async function shareInvite(){const data={title:"Supriya S P & Robin R — Wedding Invitation",text:"Join us for the reception on 19 December 2026 and wedding on 20 December 2026 at JAYAMAHESH AUDITORIUM.",url:location.href};if(navigator.share){try{await navigator.share(data)}catch(e){}}else{await navigator.clipboard?.writeText(location.href);alert("Invitation link copied.")}}
 </script>
 </body>
 </html>
